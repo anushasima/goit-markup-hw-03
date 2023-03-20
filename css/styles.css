@@ -1,32 +1,333 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* ! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+html {
+    -moz-tab-size: 4;
+    tab-size: 4
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'
+}
+
+hr {
+    height: 0;
+    color: inherit
+}
+
+abbr[title] {
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 1em
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+table {
+    text-indent: 0;
+    border-color: inherit
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button
+}
+
+::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+:-moz-ui-invalid {
+    box-shadow: none
+}
+
+legend {
+    padding: 0
+}
+
+progress {
+    vertical-align: baseline
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+summary {
+    display: list-item
+} */
+
+/* my page */
+ html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+button,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/*article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 body{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: #434455;
     font-weight: 400;
-}
+} 
 
 /*---HEADER---*/
+.container {
+    
+    width: 1128px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.header{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.header-nav{
+    display: flex;
+}
 .header-logo{
-    font-family: 'Raleway', sans-serif;
+    
+font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.17;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
 }
 
+.header-navigation{
+    display: flex;
+        margin-right: 40px;
+    /*padding: 0px;
+    gap: 40px; */
+    /* position: absolute; */
+        /* width: 261px;
+        margin-bottom: 24px;
+        margin-left: 347px;
+        margin-top: 24p */
+}
+
 .header-link{
-    font-family: 'Roboto';
+font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-right: 40px;
 }
 .header-link:hover{
     color: #404bbf;
@@ -41,6 +342,8 @@ body{
 }
 .list{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 span{
@@ -49,6 +352,24 @@ span{
 
 .header-address{
     font-style: normal;
+
+}
+
+.header-address-email{
+    position: absolute;
+    width: 153px;
+    height: 24px;
+    left: 940px;
+    top: 24px;
+    
+}
+
+.header-address-tel{
+       position: absolute;
+       width: 151px;
+       height: 24px;
+       left: 1133px;
+       top: 24px;
 }
 .header-email-tel{
     font-family: 'Roboto';
@@ -71,6 +392,11 @@ span{
 
 .section-one{
     background-color: #2e2f42;
+        width: 1440px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 .section-one-header{
         font-family: 'Roboto';
@@ -81,6 +407,12 @@ span{
         text-align: center;
         letter-spacing: 0.02em;
         color: #FFFFFF;
+        width: 496px;
+        height: 120px;
+        left: 472px;
+        top: 260px;
+        margin-bottom:48px ;
+        margin: 0 auto 48px;
 }
 .section-one-btn{
         font-family: 'Roboto', sans-serif;
@@ -93,19 +425,66 @@ span{
         letter-spacing: 0.04em;
         color: #FFFFFF;
         cursor: pointer;
+        display: inline-block;
+        flex-direction: row;
+        align-items: flex-start;
+        /* flex-direction: row; */
+        /* align-items: flex-start; */
+        /* padding: 16px 32px; */
+        /* gap: 10px; */
+        width: 169px;
+        height: 56px;
+        /* left: 636px;
+        top: 428px; */
+        background: #4D5AE5;
+        border-radius: 4px;
+        border: none;       
 
 }
 
 /*---2-SECTION---*/
 
+/* .h3{
+    display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+} */
+
+/* .p{
+    display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+} */
+.section-two{
+    padding: 120px, 0;
+   
+}
+
+.about-blocks{
+   display: block;
+   margin-right: 24;
+   width: calc((100% - 72px) / 4);
+}
+
+.about-list{
+    display: flex;
+    gap: 24px;
+}
 .section-two-header{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
+            font-family: 'Roboto';
+            font-style: normal;
+            margin: 0 0 8px 0;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: var(--title-color);
 }
 
 .section-two-text{
@@ -116,23 +495,57 @@ span{
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        margin: 0;
 }
 
 /*---3-SECTION---*/
 
-.section-three-header{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: #2E2F42;
+.section-three{
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 120px;
+    padding-left: 0;
+ 
 }
 
+.section-three-header, section-four-header{
+        font-family: 'Roboto';
+        font-style: normal;
+        margin: 0 0 72px 0;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            color: var(--title-color);
+}
+
+.section-three-list{
+    display: flex;
+    gap: 24px;
+}
+
+.section-three-picture{
+    margin-right: 24px;
+}
 /*---4-SECTION---*/
+
+.section-four{
+    background: #F4F4FD;
+    padding: 120px 0;
+    display: block;
+}
+
+.section-four-list{
+    display: flex;
+        gap: 24px;
+}
+
+.about-team{
+    margin-right: 24px;
+        background-color: var(--text-light-color);
+}
 .section-four-header{
         font-family: 'Roboto';
         font-style: normal;
@@ -143,6 +556,10 @@ span{
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #2e2f42;
+            margin: 0 0 72px 0;
+           
+           
+       
 }
 
 .section-four-title{
@@ -154,6 +571,8 @@ span{
         text-align: center;
         letter-spacing: 0.02em;
         color: #2E2F42;
+        margin-top: 0;
+        margin-bottom: 8px;
 }
 
 .section-four-text{
@@ -167,10 +586,14 @@ span{
         color: #434455;
 }
 
+.header-and-p{
+    padding: 32px 0;
+}
 
 /*---FOOTER---*/
 .footer{
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -198,6 +621,15 @@ span{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
+    display: block;
+        /* margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px; */
+}
+
+.footerb-block{
+width: 264px;
 }
 
 /*---MAIN---*/
@@ -211,7 +643,8 @@ span{
         display: flex;
         letter-spacing: 0.04em;
         color: #4d5ae5;
-        
+        padding: 12px 24px;
+        text-align: center;        
 }
 
 .navigation-btn-cursor{
@@ -222,6 +655,12 @@ span{
     cursor: pointer;
     color: #FFFFFF;
 }
+
+.portfolio-list{
+    display: flex;
+        flex-wrap: wrap;
+        gap: 48px 24px;
+}
 .portfolio-header{
     font-family: 'Roboto';
     font-style: normal;
@@ -230,7 +669,27 @@ span{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-top: 0;
+        margin-bottom: 8px;
 }
+
+.photo-description{
+    padding: 32px 0 32px 16px;
+        border: 1px solid var(--logofootertext-color);
+        border-top: 0;
+}
+
+.portfolio-buttons{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 72px 0;
+        gap: 24px;
+}
+
+/* .portfolio-li{
+    display:list-item
+} */
 
 .portfolio-text{
     font-family: 'Roboto';
@@ -240,4 +699,5 @@ span{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin: 0;
 }
